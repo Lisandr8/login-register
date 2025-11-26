@@ -59,8 +59,20 @@ export default function RegisterForm({ goLogin }) {
           <InputField
             id="name"
             type="text"
-            label="Nombre completo"
+            label="Nombre"
             placeholder="Tu nombre"
+            icon={UserIcon}
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            required
+          />
+
+          <InputField
+            id="name"
+            type="text"
+            label="Apellido"
+            placeholder="Tu apellido"
             icon={UserIcon}
             name="name"
             value={formData.name}
